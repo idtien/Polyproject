@@ -10,5 +10,7 @@ package edu.poly.dao;
  * @author Admin
  */
 public class KhachhangDAO {
-    
+    public void insert(){
+       
+    }
 }
