@@ -39,7 +39,7 @@ public class MainQL extends javax.swing.JFrame {
         btnSanPham = new javax.swing.JButton();
         btnKhachHang = new javax.swing.JButton();
         jSeparator3 = new javax.swing.JToolBar.Separator();
-        btnHuongDan = new javax.swing.JButton();
+        btnGioiThieu = new javax.swing.JButton();
         lblText = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         mnuHeThong = new javax.swing.JMenu();
@@ -69,12 +69,14 @@ public class MainQL extends javax.swing.JFrame {
 
         jToolBar1.setRollover(true);
 
+        btnDangXuat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/poly/images/logout.png"))); // NOI18N
         btnDangXuat.setText("Đăng xuất");
         btnDangXuat.setFocusable(false);
         btnDangXuat.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnDangXuat.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(btnDangXuat);
 
+        btnExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/poly/images/exit.png"))); // NOI18N
         btnExit.setText("Kết thúc");
         btnExit.setFocusable(false);
         btnExit.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -82,12 +84,14 @@ public class MainQL extends javax.swing.JFrame {
         jToolBar1.add(btnExit);
         jToolBar1.add(jSeparator2);
 
+        btnSanPham.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/poly/images/product.png"))); // NOI18N
         btnSanPham.setText("Sản Phẩm");
         btnSanPham.setFocusable(false);
         btnSanPham.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnSanPham.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(btnSanPham);
 
+        btnKhachHang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/poly/images/khachhang.png"))); // NOI18N
         btnKhachHang.setText("Khách Hàng");
         btnKhachHang.setFocusable(false);
         btnKhachHang.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -95,11 +99,12 @@ public class MainQL extends javax.swing.JFrame {
         jToolBar1.add(btnKhachHang);
         jToolBar1.add(jSeparator3);
 
-        btnHuongDan.setText("Hướng dẫn");
-        btnHuongDan.setFocusable(false);
-        btnHuongDan.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnHuongDan.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(btnHuongDan);
+        btnGioiThieu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/poly/images/intro.png"))); // NOI18N
+        btnGioiThieu.setText("Giới thiệu");
+        btnGioiThieu.setFocusable(false);
+        btnGioiThieu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnGioiThieu.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(btnGioiThieu);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -114,7 +119,7 @@ public class MainQL extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblHinh, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -125,17 +130,21 @@ public class MainQL extends javax.swing.JFrame {
 
         mnuHeThong.setText("Hệ Thống");
 
+        mniDangNhap.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/poly/images/login.png"))); // NOI18N
         mniDangNhap.setText("Đăng nhập");
         mnuHeThong.add(mniDangNhap);
 
+        mniDangXuat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/poly/images/logout.png"))); // NOI18N
         mniDangXuat.setText("Đăng xuất");
         mnuHeThong.add(mniDangXuat);
         mnuHeThong.add(jSeparator4);
 
+        mniDoiMk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/poly/images/password.png"))); // NOI18N
         mniDoiMk.setText("Đổi mật khẩu");
         mnuHeThong.add(mniDoiMk);
         mnuHeThong.add(jSeparator5);
 
+        mniExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/poly/images/exit.png"))); // NOI18N
         mniExit.setText("Thoát");
         mnuHeThong.add(mniExit);
 
@@ -143,9 +152,11 @@ public class MainQL extends javax.swing.JFrame {
 
         mnuQuanLy.setText("Quản Lý");
 
+        mniSanPham.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/poly/images/product.png"))); // NOI18N
         mniSanPham.setText("Sản Phẩm");
         mnuQuanLy.add(mniSanPham);
 
+        mniKhachHang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/poly/images/khachhang.png"))); // NOI18N
         mniKhachHang.setText("Khách hàng");
         mnuQuanLy.add(mniKhachHang);
 
@@ -153,9 +164,11 @@ public class MainQL extends javax.swing.JFrame {
 
         mnuThongKe.setText("Thống kê");
 
+        mniDoanhThu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/poly/images/doanhthu.png"))); // NOI18N
         mniDoanhThu.setText("Doanh thu");
         mnuThongKe.add(mniDoanhThu);
 
+        mniTongSanPham.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/poly/images/sumproject.png"))); // NOI18N
         mniTongSanPham.setText("Tổng sản phẩm");
         mnuThongKe.add(mniTongSanPham);
 
@@ -163,9 +176,11 @@ public class MainQL extends javax.swing.JFrame {
 
         mnuTroGiup.setText("Trợ giúp");
 
+        mniHuongDan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/poly/images/guide.png"))); // NOI18N
         mniHuongDan.setText("Hướng dẫn");
         mnuTroGiup.add(mniHuongDan);
 
+        mniGioiThieu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/poly/images/intro.png"))); // NOI18N
         mniGioiThieu.setText("Giới thiệu");
         mnuTroGiup.add(mniGioiThieu);
 
@@ -243,7 +258,7 @@ public class MainQL extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnDangXuat;
     private javax.swing.JButton btnExit;
-    private javax.swing.JButton btnHuongDan;
+    private javax.swing.JButton btnGioiThieu;
     private javax.swing.JButton btnKhachHang;
     private javax.swing.JButton btnSanPham;
     private javax.swing.JMenuBar jMenuBar1;
