@@ -58,10 +58,6 @@ public class DangNhap extends javax.swing.JDialog {
 
         lblMatKhau.setText("Mật khẩu:");
 
-        txtMaNV.setText("NV001");
-
-        txtMatKhau.setText("abc");
-
         btnDangNhap.setText("Đăng nhập");
         btnDangNhap.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
